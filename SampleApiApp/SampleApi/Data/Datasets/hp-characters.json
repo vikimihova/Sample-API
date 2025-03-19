@@ -1,0 +1,377 @@
+[
+  {
+    "id":  1,
+    "name": "Harry Potter",
+    "species": "human",
+    "gender": "male",
+    "house": "Gryffindor",
+    "dateOfBirth": "31-07-1980",
+    "yearOfBirth": 1980,
+    "wand": {
+      "wood": "holly",
+      "core": "phoenix feather",
+      "length": 11
+    },
+    "patronus": "stag"
+  },
+  {
+    "id": 2,
+    "name": "Hermione Granger",
+    "species": "human",
+    "gender": "female",
+    "house": "Gryffindor",
+    "dateOfBirth": "19-09-1979",
+    "yearOfBirth": 1979,
+    "wand": {
+      "wood": "vine",
+      "core": "dragon heartstring",
+      "length": ""
+    },
+    "patronus": "otter"
+  },
+  {
+    "id": 3,
+    "name": "Ron Weasley",
+    "species": "human",
+    "gender": "male",
+    "house": "Gryffindor",
+    "dateOfBirth": "01-03-1980",
+    "yearOfBirth": 1980,
+    "wand": {
+      "wood": "willow",
+      "core": "unicorn tail-hair",
+      "length": 14
+    },
+    "patronus": "Jack Russell terrier"
+  },
+  {
+    "id": 4,
+    "name": "Draco Malfoy",
+    "species": "human",
+    "gender": "male",
+    "house": "Slytherin",
+    "dateOfBirth": "05-06-1980",
+    "yearOfBirth": 1980,
+    "wand": {
+      "wood": "hawthorn",
+      "core": "unicorn tail-hair",
+      "length": 10
+    },
+    "patronus": ""
+  },
+  {
+    "id": 5,
+    "name": "Minerva McGonagall",
+    "species": "human",
+    "gender": "female",
+    "house": "Gryffindor",
+    "dateOfBirth": "04-10-1925",
+    "yearOfBirth": 1925,
+    "wand": {
+      "wood": "",
+      "core": "",
+      "length": ""
+    },
+    "patronus": "tabby cat"
+  },
+  {
+    "id": 6,
+    "name": "Cedric Diggory",
+    "species": "human",
+    "gender": "male",
+    "house": "Hufflepuff",
+    "dateOfBirth": "",
+    "yearOfBirth": 1977,
+    "wand": {
+      "wood": "ash",
+      "core": "unicorn hair",
+      "length": 12.25
+    },
+    "patronus": ""
+  },
+  {
+    "id": 7,
+    "name": "Cho Chang",
+    "species": "human",
+    "gender": "female",
+    "house": "Ravenclaw",
+    "dateOfBirth": "",
+    "yearOfBirth": "",
+    "wand": {
+      "wood": "",
+      "core": "",
+      "length": ""
+    },
+    "patronus": "swan"
+  },
+  {
+    "id": 8,
+    "name": "Severus Snape",
+    "species": "human",
+    "gender": "male",
+    "house": "Slytherin",
+    "dateOfBirth": "09-01-1960",
+    "yearOfBirth": 1960,
+    "wand": {
+      "wood": "",
+      "core": "",
+      "length": ""
+    },
+    "patronus": "doe"
+  },
+  {
+    "id": 9,
+    "name": "Rubeus Hagrid",
+    "species": "half-giant",
+    "gender": "male",
+    "house": "Gryffindor",
+    "dateOfBirth": "06-12-1928",
+    "yearOfBirth": 1928,
+    "wand": {
+      "wood": "oak",
+      "core": "",
+      "length": 16
+    },
+    "patronus": ""
+  },
+  {
+    "id": 10,
+    "name": "Neville Longbottom",
+    "species": "human",
+    "gender": "male",
+    "house": "Gryffindor",
+    "dateOfBirth": "30-07-1980",
+    "yearOfBirth": 1980,
+    "wand": {
+      "wood": "cherry",
+      "core": "unicorn tail-hair",
+      "length": 13
+    },
+    "patronus": ""
+  },
+  {
+    "id": 11,
+    "name": "Luna Lovegood",
+    "species": "human",
+    "gender": "female",
+    "house": "Ravenclaw",
+    "dateOfBirth": "13-02-1981",
+    "yearOfBirth": 1981,
+    "wand": {
+      "wood": "",
+      "core": "",
+      "length": ""
+    },
+    "patronus": "hare"
+  },
+  {
+    "id": 12,
+    "name": "Ginny Weasley",
+    "species": "human",
+    "gender": "female",
+    "house": "Gryffindor",
+    "dateOfBirth": "11-08-1981",
+    "yearOfBirth": 1981,
+    "wand": {
+      "wood": "yew",
+      "core": "",
+      "length": ""
+    },
+    "patronus": "horse"
+  },
+  {
+    "id": 13,
+    "name": "Sirius Black",
+    "species": "human",
+    "gender": "male",
+    "house": "Gryffindor",
+    "dateOfBirth": "03-11-1959",
+    "yearOfBirth": 1959,
+    "wand": {
+      "wood": "",
+      "core": "",
+      "length": ""
+    },
+    "patronus": "Black German Shepherd"
+  },
+  {
+    "id": 14,
+    "name": "Remus Lupin",
+    "species": "werewolf",
+    "gender": "male",
+    "house": "Gryffindor",
+    "dateOfBirth": "10-03-1960",
+    "yearOfBirth": 1960,
+    "wand": {
+      "wood": "cypress",
+      "core": "unicorn tail-hair",
+      "length": 10.25
+    },
+    "patronus": "wolf"
+  },
+  {
+    "id": 15,
+    "name": "Arthur Weasley",
+    "species": "human",
+    "gender": "male",
+    "house": "Gryffindor",
+    "dateOfBirth": "06-02-1950",
+    "yearOfBirth": 1950,
+    "wand": {
+      "wood": "",
+      "core": "",
+      "length": ""
+    },
+    "patronus": "weasel"
+  },
+  {
+    "id": 16,
+    "name": "Bellatrix Lestrange",
+    "species": "human",
+    "gender": "female",
+    "house": "Slytherin",
+    "dateOfBirth": "",
+    "yearOfBirth": 1951,
+    "wand": {
+      "wood": "walnut",
+      "core": "dragon heartstring",
+      "length": 12.75
+    },
+    "patronus": ""
+  },
+  {
+    "id": 17,
+    "name": "Lord Voldemort",
+    "species": "human",
+    "gender": "male",
+    "house": "Slytherin",
+    "dateOfBirth": "31-12-1926",
+    "yearOfBirth": 1926,
+    "wand": {
+      "wood": "yew",
+      "core": "phoenix feather",
+      "length": 13.5
+    },
+    "patronus": ""
+  },
+  {
+    "id": 18,
+    "name": "Horace Slughorn",
+    "species": "human",
+    "gender": "male",
+    "house": "Slytherin",
+    "dateOfBirth": "",
+    "yearOfBirth": "",
+    "wand": {
+      "wood": "cedar",
+      "core": "dragon heartstring",
+      "length": 10.25
+    },
+    "patronus": ""
+  },
+  {
+    "id": 19,
+    "name": "Kingsley Shacklebolt",
+    "species": "human",
+    "gender": "male",
+    "house": "",
+    "dateOfBirth": "",
+    "yearOfBirth": "",
+    "wand": {
+      "wood": "",
+      "core": "",
+      "length": ""
+    },
+    "patronus": "lynx"
+  },
+  {
+    "id": 20,
+    "name": "Dolores Umbridge",
+    "species": "human",
+    "gender": "female",
+    "house": "Slytherin",
+    "dateOfBirth": "",
+    "yearOfBirth": "",
+    "wand": {
+      "wood": "birch",
+      "core": "dragon heartstring",
+      "length": 8
+    },
+    "patronus": "persian cat"
+  },
+  {
+    "id": 21,
+    "name": "Lucius Malfoy",
+    "species": "human",
+    "gender": "male",
+    "house": "Slytherin",
+    "dateOfBirth": "",
+    "yearOfBirth": 1954,
+    "wand": {
+      "wood": "elm",
+      "core": "dragon heartstring",
+      "length": 18
+    },
+    "patronus": ""
+  },
+  {
+    "id": 22,
+    "name": "Vincent Crabbe",
+    "species": "human",
+    "gender": "male",
+    "house": "Slytherin",
+    "dateOfBirth": "",
+    "yearOfBirth": "",
+    "wand": {
+      "wood": "",
+      "core": "",
+      "length": ""
+    },
+    "patronus": ""
+  },
+  {
+    "id": 23,
+    "name": "Gregory Goyle",
+    "species": "human",
+    "gender": "male",
+    "house": "Slytherin",
+    "dateOfBirth": "",
+    "yearOfBirth": "",
+    "wand": {
+      "wood": "",
+      "core": "",
+      "length": ""
+    },
+    "patronus": ""
+  },
+  {
+    "id": 24,
+    "name": "Mrs Norris",
+    "species": "cat",
+    "gender": "female",
+    "house": "",
+    "dateOfBirth": "",
+    "yearOfBirth": "",
+    "wand": {
+      "wood": "",
+      "core": "",
+      "length": ""
+    },
+    "patronus": ""
+  },
+  {
+    "id": 25,
+    "name": "Argus Filch",
+    "species": "human",
+    "gender": "male",
+    "house": "",
+    "dateOfBirth": "",
+    "yearOfBirth": "",
+    "wand": {
+      "wood": "",
+      "core": "",
+      "length": ""
+    },
+    "patronus": ""
+  }
+]
