@@ -5,9 +5,11 @@ namespace SampleApi.ExtensionMethods.Endpoints
 {
     public static class CharacterEndpoints
     {
+        // ENDPOINTS
         public static void AddCharacterEndpoints(this WebApplication app)
         {
             app.MapGet("/characters", GetAllCharacters);
+            app.MapGet("/characters/{id}", GetCharacterById);
         }
 
         // RETURN RESULT LOGIC
@@ -42,6 +44,16 @@ namespace SampleApi.ExtensionMethods.Endpoints
             return Results.Ok(result);
         }
 
+        private static IResult GetCharacterById(Deserializer deserializer, int id)
+        {
+            CharacterDTO? result = deserializer.Characters.FirstOrDefault(c => c.Id == id);
+
+            if (result == null)
+            {
+                return Results.NotFound();
+            }
+
+            return Results.Ok(result);
         }
     }
 }
