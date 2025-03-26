@@ -26,5 +26,6 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.AddRootEndpoints();
+app.AddCharacterEndpoints();
 
 app.Run();
