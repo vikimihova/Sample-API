@@ -20,9 +20,9 @@ namespace SampleApi.Data.DTOs
 
         public string? DateOfBirth { get; set; }
 
-        public int YearOfBirth { get; set; }
+        public int? YearOfBirth { get; set; }
 
-        public WandDTO Wand { get; set; } = null!;
+        public WandDTO? Wand { get; set; }
 
         public string? Patronus { get; set; }
     }
