@@ -1,0 +1,53 @@
+﻿@page "/"
+@using SampleTestUI.ViewModels
+@inject HttpClient http
+
+<PageTitle>HP-Characters</PageTitle>
+
+<h1>All Characters</h1>
+
+@if (characters != null)
+{
+	<table class="table">
+		<thead>
+			<tr>
+				<th class="col-auto">Name</th>
+				<th class="col-auto">Gender</th>
+				<th class="col-auto">Wand wood</th>
+				<th class="col-auto">Wand core</th>
+				<th class="col-auto">Wand length</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var c in characters)
+			{
+				<tr>
+					<td>@c.Name</td>
+					<td>@c.Gender</td>
+					@if (c.Wand != null)
+					{
+						<td>@c.Wand.Wood</td>
+						<td>@c.Wand.Core</td>
+						<td>@c.Wand.Length</td>
+					}
+					else
+					{
+						<td>@c.Wand</td>
+						<td>@c.Wand</td>
+						<td>@c.Wand</td>
+					}
+				</tr>
+			}
+		</tbody>
+	</table>
+}
+
+@code {
+	private List<CharacterViewModel>? characters;
+
+	protected override async Task OnInitializedAsync()
+	{
+		characters = await http.GetFromJsonAsync<List<CharacterViewModel>>("https://localhost:7186/characters");
+	}
+}
+
