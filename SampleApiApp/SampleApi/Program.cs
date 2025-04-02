@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 // ADD SERVICES TO THE CONTAINER
 builder.Services.AddOpenApi();
 builder.Services.AddCorsService();
+builder.Services.AddAllHealthChecks();
 builder.Services.AddTransient<Deserializer>();
 
 // BUILD APPLICATION
@@ -26,7 +27,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
 app.ApplyCorsConfig();
+app.MapAllHealthChecks();
 
 app.AddRootEndpoints();
 app.AddCharacterEndpoints();
