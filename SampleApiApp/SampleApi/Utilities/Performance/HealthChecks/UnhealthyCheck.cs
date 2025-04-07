@@ -1,13 +1,13 @@
 ﻿using Microsoft.Extensions.Diagnostics.HealthChecks;
 using SampleApi.Utilities.Messages;
 
-namespace SampleApi.HealthChecks
+namespace SampleApi.Utilities.Performance.HealthChecks
 {
-    public class HealthyCheck : IHealthCheck
+    public class UnhealthyCheck : IHealthCheck
     {
         public Task<HealthCheckResult> CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken = default)
         {
-            return Task.FromResult(HealthCheckResult.Healthy(OutputMessages.HealthChecks.Healthy));
+            return Task.FromResult(HealthCheckResult.Unhealthy(OutputMessages.HealthChecks.Unhealthy));
         }
     }
 }

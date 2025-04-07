@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Diagnostics.HealthChecks;
 using SampleApi.Utilities.Messages;
 
-namespace SampleApi.HealthChecks
+namespace SampleApi.Utilities.Performance.HealthChecks
 {
     public class RandomCheck : IHealthCheck
     {

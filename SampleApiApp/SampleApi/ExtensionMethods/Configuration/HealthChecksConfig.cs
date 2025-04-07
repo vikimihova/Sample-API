@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using HealthChecks.UI.Client;
-using SampleApi.HealthChecks;
+
+using SampleApi.Utilities.Performance.HealthChecks;
 
 namespace SampleApi.ExtensionMethods.Configuration
 {
