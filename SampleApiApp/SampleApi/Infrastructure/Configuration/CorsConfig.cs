@@ -1,6 +1,4 @@
-﻿using System.Collections.Specialized;
-
-namespace SampleApi.ExtensionMethods.Configuration
+﻿namespace SampleApi.Infrastructure.Configuration
 {
     public static class CorsConfig
     {

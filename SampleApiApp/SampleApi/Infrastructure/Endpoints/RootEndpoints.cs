@@ -1,6 +1,4 @@
-﻿using System.Net.Security;
-
-namespace SampleApi.ExtensionMethods.Endpoints
+﻿namespace SampleApi.Infrastructure.Endpoints
 {
     public static class RootEndpoints
     {

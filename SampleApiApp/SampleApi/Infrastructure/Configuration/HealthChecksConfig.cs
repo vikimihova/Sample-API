@@ -3,7 +3,7 @@ using HealthChecks.UI.Client;
 
 using SampleApi.Utilities.Performance.HealthChecks;
 
-namespace SampleApi.ExtensionMethods.Configuration
+namespace SampleApi.Infrastructure.Configuration
 {
     public static class HealthChecksConfig
     {

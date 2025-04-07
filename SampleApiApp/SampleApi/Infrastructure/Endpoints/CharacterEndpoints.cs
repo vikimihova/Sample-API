@@ -2,7 +2,7 @@
 using SampleApi.Data.DTOs;
 using SampleApi.Utilities.Performance;
 
-namespace SampleApi.ExtensionMethods.Endpoints
+namespace SampleApi.Infrastructure.Endpoints
 {
     public static class CharacterEndpoints
     {

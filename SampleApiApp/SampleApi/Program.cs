@@ -1,7 +1,8 @@
-using SampleApi.Data;
-using SampleApi.ExtensionMethods.Configuration;
-using SampleApi.ExtensionMethods.Endpoints;
 using Scalar.AspNetCore;
+
+using SampleApi.Data;
+using SampleApi.Infrastructure.Configuration;
+using SampleApi.Infrastructure.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
 
