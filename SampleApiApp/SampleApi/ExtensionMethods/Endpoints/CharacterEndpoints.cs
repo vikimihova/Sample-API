@@ -1,7 +1,6 @@
 ﻿using SampleApi.Data;
 using SampleApi.Data.DTOs;
-using System.Reflection;
-using System.Runtime.CompilerServices;
+using SampleApi.Utilities.Performance;
 
 namespace SampleApi.ExtensionMethods.Endpoints
 {
@@ -50,7 +49,7 @@ namespace SampleApi.ExtensionMethods.Endpoints
             // STEP 4 - Implement a delay
             if (delay is not null)
             {
-                delay = EnforceDelayLimits((int)delay);
+                delay = PerformanceManagement.Delay.EnforceDelayLimits((int)delay);
                 await Task.Delay((int)delay);
             }
 
@@ -71,26 +70,11 @@ namespace SampleApi.ExtensionMethods.Endpoints
 
             if (delay is not null)
             {
-                delay = EnforceDelayLimits((int)delay);
+                delay = PerformanceManagement.Delay.EnforceDelayLimits((int)delay);
                 await Task.Delay((int)delay);
             }
 
             return Results.Ok(result);
-        }
-
-        private static int EnforceDelayLimits(int delay)
-        {
-            if (delay > 300000)
-            {
-                delay = 300000;
-            }
-
-            if (delay < 0)
-            {
-                delay = 0;
-            }
-
-            return delay;
-        }
+        }        
     }
 }
