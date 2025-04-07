@@ -1,4 +1,4 @@
-﻿namespace SampleApi.Utilities
+﻿namespace SampleApi.Utilities.Messages
 {
     public static class OutputMessages
     {

@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Diagnostics.HealthChecks;
-using SampleApi.Utilities;
+using SampleApi.Utilities.Messages;
 
 namespace SampleApi.HealthChecks
 {
