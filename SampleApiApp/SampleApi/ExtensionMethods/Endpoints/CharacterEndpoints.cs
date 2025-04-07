@@ -1,5 +1,7 @@
 ﻿using SampleApi.Data;
 using SampleApi.Data.DTOs;
+using System.Reflection;
+using System.Runtime.CompilerServices;
 
 namespace SampleApi.ExtensionMethods.Endpoints
 {
@@ -8,12 +10,16 @@ namespace SampleApi.ExtensionMethods.Endpoints
         // ENDPOINTS
         public static void AddCharacterEndpoints(this WebApplication app)
         {
-            app.MapGet("/characters", GetAllCharacters);
-            app.MapGet("/characters/{id}", GetCharacterById);
+            app.MapGet("/characters", GetAllCharactersAsync);
+            app.MapGet("/characters/{id}", GetCharacterByIdAsync);
         }
 
         // RETURN RESULT LOGIC
-        private static IResult GetAllCharacters(Deserializer deserializer, string? gender, string? nameSearch)
+        private static async Task<IResult> GetAllCharactersAsync(
+            Deserializer deserializer, 
+            string? gender, 
+            string? nameSearch, 
+            int? delay)
         {
             // STEP 1 - Get all
             List<CharacterDTO> result = deserializer.Characters;
@@ -41,10 +47,20 @@ namespace SampleApi.ExtensionMethods.Endpoints
                 }
             }
 
+            // STEP 4 - Implement a delay
+            if (delay is not null)
+            {
+                delay = EnforceDelayLimits((int)delay);
+                await Task.Delay((int)delay);
+            }
+
             return Results.Ok(result);
         }
 
-        private static IResult GetCharacterById(Deserializer deserializer, int id)
+        private static async Task<IResult> GetCharacterByIdAsync(
+            Deserializer deserializer, 
+            int id,
+            int? delay)
         {
             CharacterDTO? result = deserializer.Characters.FirstOrDefault(c => c.Id == id);
 
@@ -53,7 +69,28 @@ namespace SampleApi.ExtensionMethods.Endpoints
                 return Results.NotFound();
             }
 
+            if (delay is not null)
+            {
+                delay = EnforceDelayLimits((int)delay);
+                await Task.Delay((int)delay);
+            }
+
             return Results.Ok(result);
+        }
+
+        private static int EnforceDelayLimits(int delay)
+        {
+            if (delay > 300000)
+            {
+                delay = 300000;
+            }
+
+            if (delay < 0)
+            {
+                delay = 0;
+            }
+
+            return delay;
         }
     }
 }
