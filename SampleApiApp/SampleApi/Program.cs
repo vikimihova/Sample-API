@@ -33,6 +33,7 @@ app.ApplyCorsConfig();
 app.MapAllHealthChecks();
 
 app.AddRootEndpoints();
+app.AddErrorEndpoints();
 app.AddCharacterEndpoints();
 
 app.Run();
